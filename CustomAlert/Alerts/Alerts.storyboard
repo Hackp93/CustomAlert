@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U2E-Cc-JWj">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert View Controller-->
+        <scene sceneID="lLz-CC-cqL">
+            <objects>
+                <viewController id="U2E-Cc-JWj" customClass="AlertViewController" customModule="CustomAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Yc-Ww-bKz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbH-DA-CL1">
+                                <rect key="frame" x="40" y="337.5" width="334" height="221.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-bV-rLf">
+                                        <rect key="frame" x="15" y="15" width="304" height="142.5"/>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-53-uOq">
+                                        <rect key="frame" x="0.0" y="177.5" width="334" height="44"/>
+                                        <color key="backgroundColor" red="0.10189186781644821" green="0.57597362995147705" blue="0.42777800559997559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CDh-iw-hvl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickOk:" destination="U2E-Cc-JWj" eventType="touchUpInside" id="Lqg-8v-bMX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TiE-53-uOq" secondAttribute="bottom" id="3Gn-Nd-Lxc"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sXh-bV-rLf" secondAttribute="trailing" constant="15" id="FKy-LE-oV9"/>
+                                    <constraint firstItem="sXh-bV-rLf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WbH-DA-CL1" secondAttribute="leading" constant="15" id="GAp-iU-ijd"/>
+                                    <constraint firstItem="TiE-53-uOq" firstAttribute="leading" secondItem="WbH-DA-CL1" secondAttribute="leading" id="HFA-eA-fLS"/>
+                                    <constraint firstAttribute="trailing" secondItem="TiE-53-uOq" secondAttribute="trailing" id="JCi-1G-YWb"/>
+                                    <constraint firstItem="TiE-53-uOq" firstAttribute="top" secondItem="sXh-bV-rLf" secondAttribute="bottom" constant="20" id="ids-C5-kqY"/>
+                                    <constraint firstItem="sXh-bV-rLf" firstAttribute="centerX" secondItem="WbH-DA-CL1" secondAttribute="centerX" id="tbx-ve-jDW"/>
+                                    <constraint firstItem="sXh-bV-rLf" firstAttribute="top" secondItem="WbH-DA-CL1" secondAttribute="top" constant="15" id="ya5-PL-9Dm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WbH-DA-CL1" firstAttribute="leading" secondItem="5Yc-Ww-bKz" secondAttribute="leading" constant="40" id="Ami-lp-zuE"/>
+                            <constraint firstItem="WbH-DA-CL1" firstAttribute="centerX" secondItem="5Yc-Ww-bKz" secondAttribute="centerX" id="CwE-4m-sWy"/>
+                            <constraint firstAttribute="trailing" secondItem="WbH-DA-CL1" secondAttribute="trailing" constant="40" id="DuM-S9-W46"/>
+                            <constraint firstItem="WbH-DA-CL1" firstAttribute="centerY" secondItem="5Yc-Ww-bKz" secondAttribute="centerY" id="dQC-m7-Mu3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ax-Nj-sqo"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertTextLabel" destination="sXh-bV-rLf" id="ceB-6S-pUj"/>
+                        <outlet property="okButton" destination="TiE-53-uOq" id="D29-6u-0a5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zoz-Ot-fa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="89"/>
+        </scene>
+    </scenes>
+</document>

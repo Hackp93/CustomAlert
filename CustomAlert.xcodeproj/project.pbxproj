@@ -14,6 +14,8 @@
 		777C42D0225A61DA007B37E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777C42CE225A61DA007B37E5 /* LaunchScreen.storyboard */; };
 		777C42DB225A61DA007B37E5 /* CustomAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C42DA225A61DA007B37E5 /* CustomAlertTests.swift */; };
 		777C42E6225A61DA007B37E5 /* CustomAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C42E5225A61DA007B37E5 /* CustomAlertUITests.swift */; };
+		777C42F5225A6201007B37E5 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777C42F4225A6201007B37E5 /* Alerts.storyboard */; };
+		777C42F7225A638C007B37E5 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C42F6225A638C007B37E5 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		777C42E1225A61DA007B37E5 /* CustomAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		777C42E5225A61DA007B37E5 /* CustomAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertUITests.swift; sourceTree = "<group>"; };
 		777C42E7225A61DA007B37E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777C42F4225A6201007B37E5 /* Alerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alerts.storyboard; sourceTree = "<group>"; };
+		777C42F6225A638C007B37E5 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				777C42C5225A61D8007B37E5 /* AppDelegate.swift */,
 				777C42C7225A61D8007B37E5 /* ViewController.swift */,
+				777C42F3225A61F3007B37E5 /* Alerts */,
 				777C42C9225A61D8007B37E5 /* Main.storyboard */,
 				777C42CC225A61DA007B37E5 /* Assets.xcassets */,
 				777C42CE225A61DA007B37E5 /* LaunchScreen.storyboard */,
@@ -123,6 +128,15 @@
 				777C42E7225A61DA007B37E5 /* Info.plist */,
 			);
 			path = CustomAlertUITests;
+			sourceTree = "<group>";
+		};
+		777C42F3225A61F3007B37E5 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				777C42F4225A6201007B37E5 /* Alerts.storyboard */,
+				777C42F6225A638C007B37E5 /* AlertViewController.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 				777C42D0225A61DA007B37E5 /* LaunchScreen.storyboard in Resources */,
 				777C42CD225A61DA007B37E5 /* Assets.xcassets in Resources */,
 				777C42CB225A61D8007B37E5 /* Main.storyboard in Resources */,
+				777C42F5225A6201007B37E5 /* Alerts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				777C42C8225A61D8007B37E5 /* ViewController.swift in Sources */,
+				777C42F7225A638C007B37E5 /* AlertViewController.swift in Sources */,
 				777C42C6225A61D8007B37E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
